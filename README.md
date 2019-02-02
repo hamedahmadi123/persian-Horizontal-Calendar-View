@@ -38,7 +38,7 @@ Add following line in the dependencies block in `build.gradle(Module:app)`
 
 ``` 
 dependencies {
-	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calender-View:1.0.0'
+	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calender-View:1.0.1'
 	}
 	
 	```
