@@ -1,6 +1,8 @@
 
+### دریافت پروژه های اندروید  ۰۹۱۶۲۲۹۸۲۴۴
+
+
 ``` 
-دریافت پروژه های اندروید  ۰۹۱۶۲۲۹۸۲۴۴
 
 useAndroidX=true
 
@@ -25,6 +27,8 @@ Persian Horizontal Calender View is a library for android.
 
 Add following Block in root in `build.gradle(Module:app)`
 
+
+
 ``` 
 allprojects {
     repositories {
@@ -34,14 +38,17 @@ allprojects {
 ```
 
 Add following line in the dependencies block in `build.gradle(Module:app)`
-[![](https://jitpack.io/v/hamedahmadi123/persian-Horizontal-Calender-View.svg)](https://jitpack.io/#hamedahmadi123/persian-Horizontal-Calender-View)
+
+version : [![](https://jitpack.io/v/hamedahmadi123/persian-Horizontal-Calender-View.svg)](https://jitpack.io/#hamedahmadi123/persian-Horizontal-Calender-View)
 
 ``` 
 dependencies {
-	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calender-View:1.0.1'
+	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calender-View:version'
 	}
 	
-	```
+	
+```
+
 
 ## Using Horizontal Calendar View
 ### XML 
@@ -69,7 +76,7 @@ Add the followling code to your XML file
 
 
 ```
-
+### kotlin
 ```kotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
