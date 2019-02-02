@@ -34,10 +34,14 @@ allprojects {
 ```
 
 Add following line in the dependencies block in `build.gradle(Module:app)`
+[![](https://jitpack.io/v/hamedahmadi123/persian-Horizontal-Calender-View.svg)](https://jitpack.io/#hamedahmadi123/persian-Horizontal-Calender-View)
 
 ``` 
-implementation 'com.github.mybringback22:HorizontalCalendarView-Android-:0.1.0'
-```
+dependencies {
+	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calender-View:tag'
+	}
+	
+	```
 
 ## Using Horizontal Calendar View
 ### XML 
