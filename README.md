@@ -48,7 +48,7 @@ Add the followling code to your XML file
 
    
    
-       <ir.hamed.PersianHorizontalCalendarView.PersianCalendarView
+       <ir.hamed.PersianHorizontalCalendarView.PersianCalendar
            android:id="@+id/hcv"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
@@ -58,7 +58,7 @@ Add the followling code to your XML file
            app:pcv_day_color="@color/white"
            app:pcv_month_color="@color/white">
    
-       </ir.hamed.PersianHorizontalCalendarView.PersianCalendarView>
+       </ir.hamed.PersianHorizontalCalendarView.PersianCalendar>
    
 
 
@@ -72,7 +72,7 @@ import android.os.Bundle
 import android.widget.Toast
 import ir.hamed.PersianHorizontalCalendarView.DayDateMonthYearModel
 import ir.hamed.PersianHorizontalCalendarView.HorizontalCalendarListener
-import ir.hamed.PersianHorizontalCalendarView.PersianCalendarView
+import ir.hamed.PersianHorizontalCalendarView.PersianCalendar
 
 class MainActivity : AppCompatActivity(), HorizontalCalendarListener {
 
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity(), HorizontalCalendarListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val hcv = findViewById<PersianCalendarView>(R.id.hcv)
+        val hcv = findViewById<PersianCalendar>(R.id.hcv)
         hcv.setCallBack(this@MainActivity)
     }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="PersianCalendarView">
+    <declare-styleable name="PersianCalendar">
 
         <attr name="pcv_background" format="reference|color" />
         <attr name="pcv_background_select" format="reference" />

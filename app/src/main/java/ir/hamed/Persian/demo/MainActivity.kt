@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import ir.hamed.PersianHorizontalCalendarView.DayDateMonthYearModel
 import ir.hamed.PersianHorizontalCalendarView.HorizontalCalendarListener
-import ir.hamed.PersianHorizontalCalendarView.PersianCalendarView
+import ir.hamed.PersianHorizontalCalendarView.PersianCalendar
 
 class MainActivity : AppCompatActivity(), HorizontalCalendarListener {
 
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity(), HorizontalCalendarListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val hcv = findViewById<PersianCalendarView>(R.id.hcv)
+        val hcv = findViewById<PersianCalendar>(R.id.hcv)
         hcv.setCallBack(this@MainActivity)
     }
 

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.custom_calender_layout.view.*
 
 
-class PersianCalendarView : LinearLayout, ColorListener {
+class PersianCalendar : LinearLayout, ColorListener {
 
     private var backgroundSelect: Drawable? = null
     var dayColor1 = -1
@@ -52,16 +52,16 @@ class PersianCalendarView : LinearLayout, ColorListener {
 
     @SuppressLint("ResourceAsColor")
     private fun init1(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) {
-        val typedArray = context!!.obtainStyledAttributes(attrs, R.styleable.PersianCalendarView)
+        val typedArray = context!!.obtainStyledAttributes(attrs, R.styleable.PersianCalendar)
 
-        if (typedArray.hasValue(R.styleable.PersianCalendarView_pcv_background)) {
-            setBackgroundColor(typedArray.getColor(R.styleable.PersianCalendarView_pcv_background, R.color.white))
+        if (typedArray.hasValue(R.styleable.PersianCalendar_pcv_background)) {
+            setBackgroundColor(typedArray.getColor(R.styleable.PersianCalendar_pcv_background, R.color.white))
         }
-        dayColor1 = typedArray.getColor(R.styleable.PersianCalendarView_pcv_day_color, R.color.white)
-        DateColor1 = typedArray.getColor(R.styleable.PersianCalendarView_pcv_date_color, R.color.white)
-        MonthColor1 = typedArray.getColor(R.styleable.PersianCalendarView_pcv_month_color, R.color.white)
-        backgroundSelect = if (typedArray.hasValue(R.styleable.PersianCalendarView_pcv_background_select))
-            typedArray.getDrawable(R.styleable.PersianCalendarView_pcv_background_select)
+        dayColor1 = typedArray.getColor(R.styleable.PersianCalendar_pcv_day_color, R.color.white)
+        DateColor1 = typedArray.getColor(R.styleable.PersianCalendar_pcv_date_color, R.color.white)
+        MonthColor1 = typedArray.getColor(R.styleable.PersianCalendar_pcv_month_color, R.color.white)
+        backgroundSelect = if (typedArray.hasValue(R.styleable.PersianCalendar_pcv_background_select))
+            typedArray.getDrawable(R.styleable.PersianCalendar_pcv_background_select)
         else
             resources.getDrawable(R.drawable.background_selected_day)
         typedArray.recycle()

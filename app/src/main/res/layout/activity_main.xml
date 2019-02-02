@@ -9,7 +9,7 @@
     tools:context="ir.hamed.Persian.demo.MainActivity">
 
 
-    <ir.hamed.PersianHorizontalCalendarView.PersianCalendarView
+    <ir.hamed.PersianHorizontalCalendarView.PersianCalendar
         android:id="@+id/hcv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         app:pcv_day_color="@color/white"
         app:pcv_month_color="@color/white">
 
-    </ir.hamed.PersianHorizontalCalendarView.PersianCalendarView>
+    </ir.hamed.PersianHorizontalCalendarView.PersianCalendar>
 
 
 </LinearLayout>
