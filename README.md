@@ -39,13 +39,12 @@ allprojects {
 
 Add following line in the dependencies block in `build.gradle(Module:app)`
 
-version : [![](https://jitpack.io/v/hamedahmadi123/persian-Horizontal-Calender-View.svg)](https://jitpack.io/#hamedahmadi123/persian-Horizontal-Calender-View)
+TAG : [![](https://jitpack.io/v/hamedahmadi123/persian-Horizontal-Calendar-View.svg)](https://jitpack.io/#hamedahmadi123/persian-Horizontal-Calendar-View)
 
 ``` 
 dependencies {
-	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calender-View:version'
+	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calendar-View:Tag'
 	}
-	
 	
 ```
 
