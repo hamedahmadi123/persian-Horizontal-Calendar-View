@@ -43,7 +43,7 @@ TAG : [![](https://jitpack.io/v/hamedahmadi123/persian-Horizontal-Calendar-View.
 
 ``` 
 dependencies {
-	        implementation 'com.github.hamedahmadi123:persian-Horizontal-Calendar-View:Tag'
+    implementation 'com.github.hamedahmadi123:persian-Horizontal-Calendar-View:1.0.2@aar'
 	}
 	
 ```
