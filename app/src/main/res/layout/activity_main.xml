@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         app:pcv_background="@color/colorPrimary"
         app:pcv_background_select="@drawable/background_selected_day"
+        app:pcv_background_today="@drawable/background_selected_day"
         app:pcv_date_color="@color/white"
         app:pcv_day_color="@color/white"
         app:pcv_month_color="@color/white">

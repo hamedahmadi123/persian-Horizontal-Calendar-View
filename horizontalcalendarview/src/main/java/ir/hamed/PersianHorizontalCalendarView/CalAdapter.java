@@ -107,7 +107,15 @@ public class CalAdapter extends RecyclerView.Adapter<CalAdapter.MyViewHolder> {
             }
             moth = dayDateMonthYearModel.monthOfYear;
         }
+        if (position == 500)
+            holder.itemView.setBackground(colorListener.getBackgroundToday());
+        else {
+            if (lastDaySelected != null && lastDaySelected.pos == position)
+                holder.itemView.setBackground(colorListener.getBackgroundSelect());
+            else if (clickedTextView != null)
+                clickedTextView.setBackground(null);
 
+        }
 
         holder.day.setText(t);
         holder.month.setText(dayDateMonthYearModel.month);
@@ -117,16 +125,19 @@ public class CalAdapter extends RecyclerView.Adapter<CalAdapter.MyViewHolder> {
             @Override
             public void onClick(View v) {
                 if (clickedTextView != null)
-                    clickedTextView.setBackground(null);
+                    if (lastDaySelected.pos == 500)
+                        clickedTextView.setBackground(colorListener.getBackgroundToday());
+                    else
+                        clickedTextView.setBackground(null);
 
                 clickedTextView = (LinearLayout) v;
-                clickedTextView.setBackground(colorListener.getbackgroundSelect());
+                clickedTextView.setBackground(colorListener.getBackgroundSelect());
 
                 if (toCallBack != null) {
                     toCallBack.newDateSelected(getItem(position));
                 }
                 lastDaySelected = getItem(position);
-
+                lastDaySelected.pos = position;
 
             }
         });

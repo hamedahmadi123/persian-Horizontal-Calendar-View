@@ -3,7 +3,8 @@ package ir.hamed.PersianHorizontalCalendarView;
 import android.graphics.drawable.Drawable;
 
 public interface ColorListener {
-    Drawable getbackgroundSelect();
+    Drawable getBackgroundSelect();
+    Drawable getBackgroundToday();
     int getDayColor();
     int getDateColor();
     int getMonthColor();

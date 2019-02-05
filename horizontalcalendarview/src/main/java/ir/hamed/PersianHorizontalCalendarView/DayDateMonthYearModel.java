@@ -18,4 +18,5 @@ public class DayDateMonthYearModel {
     public Boolean isToday;
     public Date GregorianDate;
     public PersianDate persianDate;
+    public int pos;
 }

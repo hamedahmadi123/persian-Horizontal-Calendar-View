@@ -4,6 +4,7 @@
 
         <attr name="pcv_background" format="reference|color" />
         <attr name="pcv_background_select" format="reference" />
+        <attr name="pcv_background_today" format="reference" />
         <attr name="pcv_day_color" format="reference|color" />
         <attr name="pcv_date_color" format="reference|color" />
         <attr name="pcv_month_color" format="reference|color" />
